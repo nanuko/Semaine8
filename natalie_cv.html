@@ -1,0 +1,130 @@
+<?php
+	session_start();
+?><!DOCTYPE HTML>
+<html>
+<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+             <!--[if lt IE 9]>
+            <script src="http://github.com/aFarkas/html5shiv/blob/master/dist/html5shiv.js"></script>
+        <![endif]-->
+            
+	<title>CV</title>
+    
+			<! - Dernières CSS et compilé minified --> 
+			<link  rel= "stylesheet"  href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"  integrity= "sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="  crossorigin= "anonymous" >
+
+			<! - Thème facultatif --> 
+			<link  rel= "stylesheet"  href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"  integrity= "sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX"  crossorigin= "anonymous" >
+            
+            
+  
+      <link rel="stylesheet" href="cv.css" type="text/css">
+            
+            
+
+</head>
+
+<body>
+
+<header>
+		<div class="container">
+		<div class="conteneur">
+    	<div class="maphoto"><img src="vignette_nanuko.jpg"/></div>
+        <h1>Natalie Goncalves</h1>
+        <h2>Web Développeur/Graphiste</h2>
+        
+	</div>
+	</div>
+</header>
+
+
+<main>
+		<div class="container">
+		<div class="colonne">
+    	<div class="conteneur">
+    	<h3>Mon parcours avant Simplon</h3>
+        <p>J'ai longtemps cherchée une formation, qui alliait mon goût pour le graphisme et ma curiosité pour le développement Web</p>
+        <p>D'un bac pro secrétariat au graphisme il n'y a qu'un pas pour le code.</p>
+     	</div>
+     </div>
+     
+        
+     	<div class="colonne">
+     	<div class="conteneur">
+     	<h3>Ambitions</h3>
+        <ul>
+        <li>Acquérir des bases solides en "codage"</li>
+        <li>Refonte de mon site</li>
+        <li>Travailler en tant WebDeveloper/Graphiste</li></ul>
+       </div>
+      </div>
+      
+      
+      
+      	<div class="colonne">
+      	<div class="conteneur">
+      	<h3>Expérience</h3>
+      	<p>Du secrétariat à la vente, en passant par l'infographie ....j'ai un peu touché au C et au javascript</p>
+      </div>
+      </div>
+     </div>
+          
+
+</main>
+
+
+
+
+
+
+<footer>
+		<div class="container">
+		<iframe src=		"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.309222920606!2d-3.3434384840553295!3d47.75605617919482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48105e884a268e49%3A0x5bf1e2f3df0921ad!2s39+Rue+Jean+Marie+Maurice%2C+56600+Lanester!5e0!3m2!1sfr!2sfr!4v1445438737655" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+        
+      <div class="contact">
+      <h3>Natalie Goncalves</h3><br/>
+      <h3>Tél: **********</h3>
+      
+    </div>
+			
+	  <form class="form-style-9">
+    
+      <form name="form" id="formulaire" method="post" action="contact.php">
+<ul>
+<li>
+    <input type="text" name="field1" class="field-style field-split align-left" placeholder="Nom  Prénom" />
+    <input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" />
+
+</li>
+
+<li>
+<textarea name="field5" class="field-style" placeholder="Message"></textarea>
+</li>
+<li>
+<input type="submit" value="Envoyer" />
+</li>
+</ul>
+</form>
+
+
+    
+    
+
+</footer>
+	<! - Dernières compilé et minified JavaScript --> 
+	<script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"  integrity= "sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="  crossorigin= "anonymous" ></script>
+ 
+    
+
+
+</body>
+</html>
+
+
+<?php
+
+unset($_SESSION['inputs']);
+unset($_SESSION['success']);
+unset($_SESSION['errors']);
+?>
